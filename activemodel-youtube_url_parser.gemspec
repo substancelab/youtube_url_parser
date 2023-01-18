@@ -8,9 +8,11 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
   spec.files = Dir["{lib}/*"] + ["Rakefile"]
   spec.require_paths = ["lib"]
+
   spec.add_dependency "activemodel", ">= 5.0", "< 8.0"
   spec.add_dependency "rack", ">= 2.0", "< 4.0"
-  spec.add_dependency "uri", ">= 0.10", "< 4.0"
+  spec.add_dependency "uri", ">= 0.10"
+
   spec.add_development_dependency "bundler", ">= 2.0"
   spec.add_development_dependency "rake", ">= 10.0"
   spec.add_development_dependency "minitest"
