@@ -15,10 +15,10 @@ Initialize the ActivemodelYoutubeUrlParser and call `parse`, it will return the 
   ActivemodelYoutubeUrlParser.new.parse("https://www.youtube.com/watch?v=C0DPdy98e4c") => "C0DPdy98e4c"
 ```
 
-Or to try `parse_url`, a working, viewable, video url will be returned for share, embed or short urls:
+Or try `parse_as_url`, a working, viewable, video url will be returned for share, embed or short urls:
 
 ```
-  ActivemodelYoutubeUrlParser.new.parse_url("https://youtu.be/C0DPdy98e4c") => ""https://www.youtube.com/watch?v=C0DPdy98e4c"
+  ActivemodelYoutubeUrlParser.new.parse_as_url("https://youtu.be/C0DPdy98e4c") => ""https://www.youtube.com/watch?v=C0DPdy98e4c"
 ```
 
 License
