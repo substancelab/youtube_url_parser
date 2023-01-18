@@ -1,7 +1,7 @@
 ActivemodelYoutubeUrlParser
 ==================
 
-Make it easier to create user based operations
+Make it easier to extract ids and create viewable urls from non-viewable Youtube urls
 
 [![Build Status](https://travis-ci.com/substancelab/activemodel-youtube_url_parser.svg?branch=master)](https://travis-ci.com/substancelab/activemodel-youtube_url_parser)
 
