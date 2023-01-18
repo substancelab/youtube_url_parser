@@ -41,7 +41,7 @@ GEM
     uri (0.12.0)
 
 PLATFORMS
-  arm64-darwin-21
+  ruby
 
 DEPENDENCIES
   bundler (>= 2.0)
