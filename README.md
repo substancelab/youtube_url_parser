@@ -9,6 +9,8 @@ Make it easier to extract ids and create viewable urls from non-viewable Youtube
 Usage examples
 --------------
 
+### `#parse`
+
 Initialize the YoutubeUrlParser and call `parse`, it will return the video id:
 
 ```
@@ -27,6 +29,7 @@ And short urls
   YoutubeUrlParser.new.parse("https://youtube.com/shorts/C0DPdy98e4c") => "C0DPdy98e4c"
 ```
 
+### `#parse_as_url`
 
 Or try `parse_as_url`, a working, viewable, video url will be returned for share, embed or short urls:
 
