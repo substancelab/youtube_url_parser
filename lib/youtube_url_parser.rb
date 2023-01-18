@@ -1,16 +1,18 @@
 # frozen_string_literal: true
 
 require "uri"
-require "active_model"
 require "rack/utils"
 
 class YoutubeUrlParser
   class YoutubeShareUrl
-    include ActiveModel::Model
     attr_accessor :link, :uri
 
     def self.share_link?(link)
       link.include?("/youtu.be")
+    end
+
+    def initialize(link:)
+      @link = link
     end
 
     def youtube_id
@@ -94,7 +96,7 @@ class YoutubeUrlParser
 
     youtube_link = define_link(link).new(:link => link)
 
-    if youtube_link.youtube_id.present?
+    if youtube_link.youtube_id && !youtube_link.youtube_id.empty?
       return "https://www.youtube.com/watch?v=#{youtube_link.youtube_id}"
     end
 
