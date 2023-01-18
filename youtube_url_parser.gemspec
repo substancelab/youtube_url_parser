@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Ole Palm"]
   spec.email = "ole.palm@substancelab.com"
   spec.homepage = "https://github.com/substancelab/youtube_url_parser"
-  spec.license       = "MIT"
+  spec.license = "MIT"
   spec.files = Dir["{lib}/*"] + ["Rakefile"]
   spec.require_paths = ["lib"]
 
