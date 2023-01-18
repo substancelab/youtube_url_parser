@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = "youtube_url_parser"
-  spec.version = "1.0.0"
+  spec.version = "1.0.1"
   spec.summary = "Parsing of youtube urls"
   spec.authors = ["Ole Palm"]
   spec.email = "ole.palm@substancelab.com"
