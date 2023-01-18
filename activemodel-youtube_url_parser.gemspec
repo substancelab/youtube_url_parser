@@ -4,9 +4,9 @@ Gem::Specification.new do |spec|
   spec.summary = "Parsing of youtube urls using rich activemodel"
   spec.authors = ["Ole Palm"]
   spec.email = "ole.palm@substancelab.com"
-  spec.homepage = "https://rubygems.org/gems/activemodel-youtube_url_parser"
+  spec.homepage = "https://github.com/substancelab/activemodel-email_address_validator"
   spec.license       = "MIT"
-  spec.files = Dir["{lib}/*"]
+  spec.files = Dir["{lib}/*"] + ["Rakefile"]
   spec.require_paths = ["lib"]
   spec.add_dependency "activemodel", ">= 5.0", "< 8.0"
   spec.add_dependency "rack", ">= 2.0", "< 4.0"
