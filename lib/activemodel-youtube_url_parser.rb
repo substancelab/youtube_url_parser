@@ -86,7 +86,6 @@ class ActivemodelYoutubeUrlParser
     youtube_link = define_link(link).new(:link => link)
     youtube_link.youtube_id
   rescue URI::InvalidURIError => error
-    Rails.logger.error("Parsing youtube link error: #{error.inspect}")
     nil
   end
 
@@ -101,7 +100,6 @@ class ActivemodelYoutubeUrlParser
 
     nil
   rescue URI::InvalidURIError => error
-    Rails.logger.error("Parsing youtube link error: #{error.inspect}")
     nil
   end
 
