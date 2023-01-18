@@ -14,11 +14,29 @@ Initialize the YoutubeUrlParser and call `parse`, it will return the video id:
 ```
   YoutubeUrlParser.new.parse("https://www.youtube.com/watch?v=C0DPdy98e4c") => "C0DPdy98e4c"
 ```
+Works with embed code from youtube as well:
+
+```
+  YoutubeUrlParser.new.parse('<iframe width="560" height="315" src="https://www.youtube.com/embed/C0DPdy98e4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyrosco
+pe; picture-in-picture; web-share" allowfullscreen></iframe>') => "C0DPdy98e4c"
+```
+
+And short urls
+
+```
+  YoutubeUrlParser.new.parse("https://youtube.com/shorts/C0DPdy98e4c") => "C0DPdy98e4c"
+```
+
 
 Or try `parse_as_url`, a working, viewable, video url will be returned for share, embed or short urls:
 
 ```
-  YoutubeUrlParser.new.parse_as_url("https://youtu.be/C0DPdy98e4c") => ""https://www.youtube.com/watch?v=C0DPdy98e4c"
+  YoutubeUrlParser.new.parse_as_url("https://youtu.be/C0DPdy98e4c") => "https://www.youtube.com/watch?v=C0DPdy98e4c"
+```
+
+```
+  YoutubeUrlParser.new.parse_as_url('<iframe width="560" height="315" src="https://www.youtube.com/embed/C0DPdy98e4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>') => "https://www.youtube.com/watch?v=C0DPdy98e4c"
 ```
 
 License
