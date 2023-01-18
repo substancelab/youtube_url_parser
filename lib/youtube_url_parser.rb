@@ -4,7 +4,7 @@ require "uri"
 require "active_model"
 require "rack/utils"
 
-class ActivemodelYoutubeUrlParser
+class YoutubeUrlParser
   class YoutubeShareUrl
     include ActiveModel::Model
     attr_accessor :link, :uri

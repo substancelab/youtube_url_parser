@@ -1,10 +1,10 @@
 Gem::Specification.new do |spec|
-  spec.name = "activemodel-youtube_url_parser"
+  spec.name = "youtube_url_parser"
   spec.version = "1.0.0"
-  spec.summary = "Parsing of youtube urls using rich activemodel"
+  spec.summary = "Parsing of youtube urls"
   spec.authors = ["Ole Palm"]
   spec.email = "ole.palm@substancelab.com"
-  spec.homepage = "https://github.com/substancelab/activemodel-email_address_validator"
+  spec.homepage = "https://github.com/substancelab/youtube_url_parser"
   spec.license       = "MIT"
   spec.files = Dir["{lib}/*"] + ["Rakefile"]
   spec.require_paths = ["lib"]

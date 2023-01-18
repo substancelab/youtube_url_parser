@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require "activemodel-youtube_url_parser"
+require "youtube_url_parser"
 require "spec_helper"
 
-describe ActivemodelYoutubeUrlParser do
+describe YoutubeUrlParser do
   describe "#parse_as_url" do
     it "returns nil if no string" do
       expect(subject.parse_as_url([])).to be_nil

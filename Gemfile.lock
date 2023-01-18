@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    activemodel-youtube_url_parser (1.0.0)
+    youtube_url_parser (1.0.0)
       activemodel (>= 5.0, < 8.0)
       rack (>= 2.0, < 4.0)
       uri (>= 0.10)
@@ -44,11 +44,11 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  activemodel-youtube_url_parser!
   bundler (>= 2.0)
   minitest
   rake
   rspec (~> 3.11)
+  youtube_url_parser!
 
 BUNDLED WITH
    2.2.22
