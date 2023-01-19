@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = "youtube_url_parser"
-  spec.version = "1.0.0"
+  spec.version = "1.0.1"
   spec.summary = "Parsing of youtube urls"
   spec.authors = ["Ole Palm"]
   spec.email = "ole.palm@substancelab.com"
@@ -9,7 +9,6 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{lib}/*"] + ["Rakefile"]
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activemodel", ">= 5.0", "< 8.0"
   spec.add_dependency "rack", ">= 2.0", "< 4.0"
   spec.add_dependency "uri", ">= 0.10"
 
